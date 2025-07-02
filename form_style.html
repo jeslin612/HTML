@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body style="background-color:aqua">
+    <h2>Create Account</h2>
+    <form action="/submit" method="post">
+        <label for="name">First Name*</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your First Name" required><br><br>
+
+        <label for="name">Last Name*</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your Last Name" required><br><br>
+
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+        
+        <label for="password">Password*</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required><br><br>
+
+        <p><strong>Gender:</strong></p>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female" > Female </label>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male" > Male </label>
+
+        <p><strong>Hobbies:</strong></p>
+        <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="run" name="hobbies[]" value="Run">
+        <label for="run">Run</label><br>
+
+        <input type="checkbox" id="play" name="hobbies[]" value="Play">
+        <label for="play">Play</label><br><br>
+
+
+        
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
